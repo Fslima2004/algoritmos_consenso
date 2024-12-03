@@ -17,18 +17,18 @@
 3. Fases do Algoritmo na Implementação
 
         1. Seleção de Validador
-        Cada nó tem uma probabilidade proporcional ao seu "stake" de ser escolhido como o próximo validador.
-        O módulo validator_selection.py utiliza um algoritmo baseado em pesos para essa escolha.
+                Cada nó tem uma probabilidade proporcional ao seu "stake" de ser escolhido como o próximo validador.
+                O módulo validator_selection.py utiliza um algoritmo baseado em pesos para essa escolha.
         2. Proposição de Blocos
-        O nó escolhido propõe um novo bloco contendo transações.
-        A proposta é enviada para os outros nós ativos da rede.
+                O nó escolhido propõe um novo bloco contendo transações.
+                A proposta é enviada para os outros nós ativos da rede.
         3. Validação de Blocos
-        Os nós verificam se o bloco proposto é válido:
-        Transações devem estar presentes.
-        O hash anterior deve corresponder ao último bloco aceito.
-        Apenas blocos válidos são adicionados à blockchain.
+                Os nós verificam se o bloco proposto é válido:
+                Transações devem estar presentes.
+                O hash anterior deve corresponder ao último bloco aceito.
+                Apenas blocos válidos são adicionados à blockchain.
         4. Atualização da Blockchain
-        Após a validação bem-sucedida, o bloco é adicionado à cadeia e compartilhado com os outros nós.
+                Após a validação bem-sucedida, o bloco é adicionado à cadeia e compartilhado com os outros nós.
 
 
 
@@ -36,20 +36,21 @@
 
           Falhas Implementadas
   
-                            Nó Inativo
-                            Um nó pode "falhar" e tornar-se inativo, simulando problemas como perda de conexão ou falha de hardware.
-                            Nós inativos não podem propor nem validar blocos.
-                          
-                            Falha na Validação
-                            Blocos inválidos são rejeitados pelos nós, simulando uma proteção contra comportamentos maliciosos.
-                            
-                            Conflitos na Rede
-                            Quando um bloco não atinge consenso, ele é descartado, e uma nova rodada de validação é iniciada.
+            Nó Inativo
+            Um nó pode "falhar" e tornar-se inativo, simulando problemas como perda de conexão ou falha de hardware.
+            Nós inativos não podem propor nem validar blocos.
+          
+            Falha na Validação
+            Blocos inválidos são rejeitados pelos nós, simulando uma proteção contra comportamentos maliciosos.
+            
+            Conflitos na Rede
+            Quando um bloco não atinge consenso, ele é descartado, e uma nova rodada de validação é iniciada.
+
   
           Mecanismos de Recuperação
   
-                            Reativação de Nós:
-                            Nós inativos podem ser recuperados manualmente pela rede (simulado no código).
-                            
-                            Sincronização da Blockchain:
-                            Nós que retornam após uma falha sincronizam-se com a cadeia mais longa na rede.
+            Reativação de Nós:
+            Nós inativos podem ser recuperados manualmente pela rede (simulado no código).
+            
+            Sincronização da Blockchain:
+            Nós que retornam após uma falha sincronizam-se com a cadeia mais longa na rede.
