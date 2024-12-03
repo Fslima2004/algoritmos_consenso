@@ -10,11 +10,12 @@
         Para executar o projeto, é necessário ter instalado o Python 3.8 ou superior
         Passos para execução:
           1. Clonar repositório
-          2. Executar o seguinte comando: python main.py
+          2. Executar o código: python main.py
+          3. Executar testes: python -m unittest discover -s tests
 
 
 
-3. Fases do Algoritmo na Implementação
+4. Fases do Algoritmo na Implementação
 
         1. Seleção de Validador
            Cada nó tem uma probabilidade proporcional ao seu "stake" de ser escolhido como o próximo validador.
@@ -32,7 +33,7 @@
 
 
 
-4. Simulação de Falhas
+5. Simulação de Falhas
 
           Falhas Implementadas
   
