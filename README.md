@@ -34,22 +34,22 @@
 
 4. Simulação de Falhas
 
-  Falhas Implementadas
+          Falhas Implementadas
   
-    Nó Inativo
-    Um nó pode "falhar" e tornar-se inativo, simulando problemas como perda de conexão ou falha de hardware.
-    Nós inativos não podem propor nem validar blocos.
+                            Nó Inativo
+                            Um nó pode "falhar" e tornar-se inativo, simulando problemas como perda de conexão ou falha de hardware.
+                            Nós inativos não podem propor nem validar blocos.
+                          
+                            Falha na Validação
+                            Blocos inválidos são rejeitados pelos nós, simulando uma proteção contra comportamentos maliciosos.
+                            
+                            Conflitos na Rede
+                            Quando um bloco não atinge consenso, ele é descartado, e uma nova rodada de validação é iniciada.
   
-    Falha na Validação
-    Blocos inválidos são rejeitados pelos nós, simulando uma proteção contra comportamentos maliciosos.
-    
-    Conflitos na Rede
-    Quando um bloco não atinge consenso, ele é descartado, e uma nova rodada de validação é iniciada.
+          Mecanismos de Recuperação
   
-  Mecanismos de Recuperação
-  
-    Reativação de Nós:
-    Nós inativos podem ser recuperados manualmente pela rede (simulado no código).
-    
-    Sincronização da Blockchain:
-    Nós que retornam após uma falha sincronizam-se com a cadeia mais longa na rede.
+                            Reativação de Nós:
+                            Nós inativos podem ser recuperados manualmente pela rede (simulado no código).
+                            
+                            Sincronização da Blockchain:
+                            Nós que retornam após uma falha sincronizam-se com a cadeia mais longa na rede.
