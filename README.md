@@ -17,18 +17,18 @@
 3. Fases do Algoritmo na Implementação
 
         1. Seleção de Validador
-                Cada nó tem uma probabilidade proporcional ao seu "stake" de ser escolhido como o próximo validador.
-                O módulo validator_selection.py utiliza um algoritmo baseado em pesos para essa escolha.
+           Cada nó tem uma probabilidade proporcional ao seu "stake" de ser escolhido como o próximo validador.
+           O módulo validator_selection.py utiliza um algoritmo baseado em pesos para essa escolha.
         2. Proposição de Blocos
-                O nó escolhido propõe um novo bloco contendo transações.
-                A proposta é enviada para os outros nós ativos da rede.
+           O nó escolhido propõe um novo bloco contendo transações.
+           A proposta é enviada para os outros nós ativos da rede.
         3. Validação de Blocos
-                Os nós verificam se o bloco proposto é válido:
-                Transações devem estar presentes.
-                O hash anterior deve corresponder ao último bloco aceito.
-                Apenas blocos válidos são adicionados à blockchain.
+           Os nós verificam se o bloco proposto é válido:
+           Transações devem estar presentes.
+           O hash anterior deve corresponder ao último bloco aceito.
+           Apenas blocos válidos são adicionados à blockchain.
         4. Atualização da Blockchain
-                Após a validação bem-sucedida, o bloco é adicionado à cadeia e compartilhado com os outros nós.
+           Após a validação bem-sucedida, o bloco é adicionado à cadeia e compartilhado com os outros nós.
 
 
 
