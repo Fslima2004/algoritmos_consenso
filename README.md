@@ -4,12 +4,14 @@ Este projeto implementa uma simulação do algoritmo Proof of Stake (PoS) em um 
 Na simulação, um conjunto de nós representa os participantes da rede. Cada nó possui uma quantidade de "stake" (participação), que influencia suas chances de ser escolhido como validador de blocos. O sistema implementa falhas simuladas e mecanismos de recuperação para demonstrar a resiliência do algoritmo.
 
 
+
 Configuração do Ambiente e Execução do Código
 
 Para executar o projeto, é necessário ter instalado o Python 3.8 ou superior
 Passos para execução:
 1. Clonar repositório
 2. Executar o seguinte comando: python main.py
+
 
 
 Fases do Algoritmo na Implementação
@@ -27,6 +29,7 @@ O hash anterior deve corresponder ao último bloco aceito.
 Apenas blocos válidos são adicionados à blockchain.
 4. Atualização da Blockchain
 Após a validação bem-sucedida, o bloco é adicionado à cadeia e compartilhado com os outros nós.
+
 
 
 Simulação de Falhas
